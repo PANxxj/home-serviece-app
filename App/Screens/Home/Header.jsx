@@ -27,7 +27,7 @@ const Header = () => {
                 fontFamily: "outfit-medium",
               }}
             >
-              Janki Sita
+              Janki Sita 
             </Text>
             {/* <Text>{user?.fullname}</Text> */}
           </View>

@@ -12,7 +12,7 @@ const Category = () => {
       <FlatList
         numColumns={4}
         data={categories}
-        renderItem={({ item, index }) => (
+        renderItem={({ item, index }) => index<=3 &&  (
           <View style={styles.container}>
             <View style={styles.iconContainer}>
               <MaterialCommunityIcons
@@ -22,7 +22,7 @@ const Category = () => {
                 color="black"
               />
             </View>
-            <Text>{item.name}</Text>
+            <Text style={{fontFamily:'outfit-medium',marginTop:5}}>{item.name}</Text>
           </View>
         )}
       />

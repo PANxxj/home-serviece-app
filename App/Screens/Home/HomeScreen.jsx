@@ -4,6 +4,7 @@ import Header from "./Header";
 import Slider from "./Slider";
 import axios from "axios";
 import Category from "./Category";
+import BuinessList from "./BuinessList";
 
 const HomeScreen = () => {
   //   const getData = async () => {
@@ -27,6 +28,7 @@ const HomeScreen = () => {
       <View style={{ padding: 20 }}>
         <Slider />
         <Category />
+        <BuinessList/>
       </View>
     </View>
   );
