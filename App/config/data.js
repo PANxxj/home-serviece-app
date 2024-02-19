@@ -24,21 +24,25 @@ const categories = [
     name: "Cleaning",
     id: 1,
     icon: "attachment",
+    color:'purple'
   },
   {
     name: "Repairing",
     id: 2,
     icon: "hammer-screwdriver",
+    color:'blue'
   },
   {
     name: "Painting",
     id: 3,
     icon: "format-paint",
+    color:'green'
   },
   {
     name: "Furnising",
-    id: 3,
+    id: 4,
     icon: "table-furniture",
+    color:'red'
   },
 ];
 
@@ -47,11 +51,11 @@ const businessList = [
     id: 1,
     name: "House Cleaning",
     email: "admimn@gmail.com",
-    contactPerson: "Bob",
+    contactPerson: "Bob The Builder",
     category: {
-      name: "Painting",
+      name: "Cleaning",
     },
-    address: "Bilaspu",
+    address: "NBT Bilaspur C.G 459001",
     about: "hey there",
     image: [
       {
@@ -68,9 +72,9 @@ const businessList = [
     email: "park@gmail.com",
     contactPerson: "Builder",
     category: {
-      name: "Painting",
+      name: "Repairing",
     },
-    address: "Bilaspu",
+    address: "NBT Bilaspur C.G 459001",
     about: "hey there",
     image: [
       {
@@ -87,9 +91,10 @@ const businessList = [
     email: "sjinwoo@gmail.com",
     contactPerson: "Maruti",
     category: {
-      name: "Painting",
+    //   name: "Furnising",
+      name: "Repairing",
     },
-    address: "Bilaspu",
+    address: "NBT Bilaspur C.G 459001",
     about: "hey there",
     image: [
       {
@@ -108,7 +113,83 @@ const businessList = [
     category: {
       name: "Painting",
     },
-    address: "Bilaspu",
+    address: "NBT Bilaspur C.G 459001",
+    about: "hey there",
+    image: [
+      {
+        url: "",
+      },
+      {
+        url: "",
+      },
+    ],
+  },
+  {
+    id: 5,
+    name: "Paint House",
+    email: "kira@gmail.com",
+    contactPerson: "kira",
+    category: {
+      name: "Painting",
+    },
+    address: "NBT Bilaspur C.G 459001",
+    about: "hey there",
+    image: [
+      {
+        url: "",
+      },
+      {
+        url: "",
+      },
+    ],
+  },
+  {
+    id: 6,
+    name: "House Reparing",
+    email: "sjinwoo@gmail.com",
+    contactPerson: "Maruti",
+    category: {
+      name: "Cleaning",
+    },
+    address: "NBT Bilaspur C.G 459001",
+    about: "hey there",
+    image: [
+      {
+        url: "",
+      },
+      {
+        url: "",
+      },
+    ],
+  },
+  {
+    id: 7,
+    name: "House Cleaning",
+    email: "admimn@gmail.com",
+    contactPerson: "Bob The Builder",
+    category: {
+      name: "Cleaning",
+    },
+    address: "NBT Bilaspur C.G 459001",
+    about: "hey there",
+    image: [
+      {
+        url: "",
+      },
+      {
+        url: "",
+      },
+    ],
+  },
+  {
+    id: 8,
+    name: "Wash Clothes",
+    email: "park@gmail.com",
+    contactPerson: "Builder",
+    category: {
+      name: "Repairing",
+    },
+    address: "NBT Bilaspur C.G 459001",
     about: "hey there",
     image: [
       {

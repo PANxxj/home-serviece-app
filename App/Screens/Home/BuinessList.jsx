@@ -6,7 +6,7 @@ import BusinessListItem from "./BusinessListItem";
 
 const BuinessList = () => {
   return (
-    <View style={{ marginTop: 20 }}>
+    <View style={{ marginTop: 10 }}>
       <Heading heading={"Latest Business"} isViewAll={true} />
       <FlatList
         horizontal={true}

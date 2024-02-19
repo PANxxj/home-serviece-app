@@ -28,6 +28,7 @@ const BusinessListItem = ({ data }) => {
             borderRadius: 3,
             alignSelf: "flex-start",
             paddingHorizontal: 7,
+            fontWeight: "bold",
           }}
         >
           {data.category.name}
@@ -42,7 +43,7 @@ export default BusinessListItem;
 const styles = StyleSheet.create({
   image: {
     width: 160,
-    height: 100,
+    height: 95,
     borderRadius: 10,
   },
   container: {
