@@ -47,7 +47,7 @@ const businessList = [
     id: 1,
     name: "House Cleaning",
     email: "admimn@gmail.com",
-    contactPerson: 78865888,
+    contactPerson: "Bob",
     category: {
       name: "Painting",
     },
@@ -66,7 +66,7 @@ const businessList = [
     id: 2,
     name: "Wash Clothes",
     email: "park@gmail.com",
-    contactPerson: 75353588,
+    contactPerson: "Builder",
     category: {
       name: "Painting",
     },
@@ -85,7 +85,7 @@ const businessList = [
     id: 3,
     name: "House Reparing",
     email: "sjinwoo@gmail.com",
-    contactPerson: 78865888,
+    contactPerson: "Maruti",
     category: {
       name: "Painting",
     },
@@ -104,7 +104,7 @@ const businessList = [
     id: 4,
     name: "Paint House",
     email: "kira@gmail.com",
-    contactPerson: 78865888,
+    contactPerson: "kira",
     category: {
       name: "Painting",
     },
