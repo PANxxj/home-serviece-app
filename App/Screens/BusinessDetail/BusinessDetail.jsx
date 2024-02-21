@@ -5,6 +5,7 @@ import {
   View,
   TouchableOpacity,
   ScrollView,
+  Modal,
 } from "react-native";
 import React, { useEffect, useState } from "react";
 import { useNavigation, useRoute } from "@react-navigation/native";
@@ -12,6 +13,7 @@ import { Ionicons } from "@expo/vector-icons";
 import Colors from "../../Utils/Colors";
 import Heading from "../../Components/Heading";
 import BusinessImages from "./BusinessImages";
+import BookingModal from "./BookingModal";
 // import { Ionicons } from "@expo/vector-icons";
 
 const BusinessDetail = () => {
@@ -19,6 +21,7 @@ const BusinessDetail = () => {
   const params = useRoute().params;
   const [data, setData] = useState(params.business);
   const [lines, setLines] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   // useEffect(() => {
   //   setData(params.business);
@@ -131,7 +134,10 @@ const BusinessDetail = () => {
             Message
           </Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.bookingBtn}>
+        <TouchableOpacity
+          style={styles.bookingBtn}
+          onPress={() => setShowModal(true)}
+        >
           <Text
             style={{
               textAlign: "center",
@@ -140,10 +146,13 @@ const BusinessDetail = () => {
               fontSize: 18,
             }}
           >
-            Bookings
+            Book Now
           </Text>
         </TouchableOpacity>
       </View>
+      <Modal animationType="slide" visible={showModal}>
+        <BookingModal hideModal={() => setShowModal(false)} />
+      </Modal>
     </View>
   );
 };

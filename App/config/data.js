@@ -202,4 +202,33 @@ const businessList = [
   },
 ];
 
-export { data, categories, businessList };
+const bookedService =[
+  {
+    id:1,
+    username:'M.S. Dhoni',
+    email:'ms77@gmail.com',
+    date:'23 Oct 2023',
+    time:'8:00 AM',
+    business:'Painting',
+    status:'Booked'
+  },
+  {
+    id:2,
+    username:'Sachin Tendulkar',
+    email:'tSachin@gmail.com',
+    date:'10 May 2023',
+    time:'10:00 AM',
+    business:'Cleaning',
+    status:'InProgress'
+  },
+  {
+    id:3,
+    username:'Virat Kohali',
+    email:'kvirat@gmail.com',
+    date:'1 Aug 2023',
+    time:'1:00 AM',
+    business:'Repairing',
+    status:'Completed'
+  },
+]
+export { data, categories, businessList,bookedService };
